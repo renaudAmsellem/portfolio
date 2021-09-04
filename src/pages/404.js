@@ -1,10 +1,10 @@
-import * as React from "react"
-import { navigate } from "gatsby"
+import React, { useEffect } from "react";
+import { navigate } from "@reach/router";
 
-// markup
-const NotFoundPage = () => {
-  navigate("/")
-  return <></>
-}
+export default function NotFound () {
+  useEffect(() => {
+    navigate("/");
+  }, []);
 
-export default NotFoundPage
+  return <></>;
+};
