@@ -1,0 +1,138 @@
+.content {
+  background-image: url(../images/montain.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+
+  .presentation-wrapper {
+    min-height: calc(100vh - 3.5em);
+    display: flex;
+
+    .presentation {
+      margin-top: auto;
+      margin-bottom: auto;
+
+      &,
+      h1 {
+        color: white;
+      }
+    }
+  }
+
+  .my-work {
+    text-align: center;
+    max-width: 720px;
+    margin: 0.5em auto;
+    padding: 3.5em 5vw;
+  }
+
+  .the-man-behind {
+    text-align: center;
+    max-width: 720px;
+    margin: 2em auto;
+    padding: 0 5vw;
+  }
+
+  .experience {
+    padding: 2em 5vw;
+
+    .description {
+      margin: auto;
+    }
+
+    .title {
+      margin-bottom: 0.5em;
+    }
+
+    .tools {
+      margin-left: 2em;
+    }
+  }
+
+  .vocaleo {
+    background-color: #d6fff7;
+    .title {
+      color: #19bc9c;
+    }
+  }
+
+  .poiscaille {
+    background-color: #fee575;
+    .title {
+      color: #315085;
+    }
+  }
+
+  .bedrock {
+    background-color: white;
+    .title {
+      color: #fb5742;
+    }
+  }
+
+  .viaco {
+    &,
+    strong,
+    a,
+    .title {
+      color: white;
+    }
+    background-color: #4c3e72;
+  }
+
+  .jetpulp {
+    &,
+    strong,
+    a,
+    .title {
+      color: #2d2a26;
+    }
+    background-color: #fbda00;
+  }
+
+  #the-man-behind {
+    margin-top: 1em;
+    padding: 1em 5vw 2em 5vw;
+    .passion {
+      position: absolute;
+      font-size: 2.5em;
+      color: rgb(223, 108, 87);
+      text-decoration: underline;
+    }
+
+    .passion-text {
+      padding: 4em 0 1em 3em;
+    }
+  }
+
+  #contact {
+    background-color: #246e50;
+    padding: 3em;
+    text-align: center;
+    color: white;
+
+    h3 {
+      color: white;
+      margin-bottom: 1em;
+    }
+
+    .contact-button {
+      border: 1px solid white;
+      border-radius: 10px;
+      padding: 0.5em;
+      color: white;
+
+      &:hover {
+        background-color: white;
+        color: #246e50;
+      }
+    }
+
+    .copied {
+      text-align: center;
+      padding: 0.5em;
+    }
+  }
+}
