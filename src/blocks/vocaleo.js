@@ -1,7 +1,7 @@
 import React from "react";
-import vocaleoCart from "../images/vocaleo/cart.png";
-import vocaleoHome from "../images/vocaleo/home.png";
-import vocaleoConfigurate from "../images/vocaleo/configurate.png";
+import vocaleoCart from "../images/vocaleo/cart.webp";
+import vocaleoHome from "../images/vocaleo/home.webp";
+import vocaleoConfigurate from "../images/vocaleo/configurate.webp";
 import Mockup from "../components/Mockup";
 import Carousel from "../components/Carousel";
 

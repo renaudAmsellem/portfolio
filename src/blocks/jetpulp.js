@@ -1,8 +1,8 @@
 import React from "react";
-import jetpulpLavieclaire from "../images/jetpulp/lavieclaire.png";
-import jetpulpLouispion from "../images/jetpulp/louispion.png";
-import jetpulpCridon from "../images/jetpulp/cridon.png";
-import jetpulpRobur from "../images/jetpulp/robur.png";
+import jetpulpLavieclaire from "../images/jetpulp/lavieclaire.webp";
+import jetpulpLouispion from "../images/jetpulp/louispion.webp";
+import jetpulpCridon from "../images/jetpulp/cridon.webp";
+import jetpulpRobur from "../images/jetpulp/robur.webp";
 import Mockup from "../components/Mockup";
 import Carousel from "../components/Carousel";
 

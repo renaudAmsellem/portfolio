@@ -1,6 +1,6 @@
 import React from "react";
-import bedrock6Play from "../images/bedrock/6play.png";
-import bedrockSalto from "../images/bedrock/salto.png";
+import bedrock6Play from "../images/bedrock/6play.webp";
+import bedrockSalto from "../images/bedrock/salto.webp";
 import Mockup from "../components/Mockup";
 import Carousel from "../components/Carousel";
 
