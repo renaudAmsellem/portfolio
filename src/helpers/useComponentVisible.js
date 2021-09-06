@@ -6,7 +6,6 @@ export default function useComponentVisible(initialIsVisible) {
 
   const handleClickOutside = (event) => {
     if (ref.current && !ref.current.contains(event.target)) {
-        console.log('renal - outisde visible : ', visible);
       setTimeout(() => setVisible(false), 0);
     }
   };

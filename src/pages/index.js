@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import VocaleoExperience from "../blocks/vocaleo";
 import PoiscailleExperience from "../blocks/poiscaille";
@@ -24,6 +25,9 @@ const RenaudPage = () => {
 
   return (
     <main className="content">
+      <Helmet>
+        <meta name="description" charSet="utf-8" content="Here, you can find descriptions of my main works, informations about me and how to contact me" />
+      </Helmet>
       <Navbar />
       <title>Renaud Amsellem</title>
       <div className="presentation-wrapper columns">

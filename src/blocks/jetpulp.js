@@ -74,16 +74,16 @@ export default function BedrockExperience() {
       <Mockup device={"macbook-pro"}>
         <Carousel>
           <div>
-            <img src={jetpulpLavieclaire} alt="Lavieclaire account" />
+            <img src={jetpulpLavieclaire} alt="Lavieclaire account" loading="lazy" />
           </div>
           <div>
-            <img src={jetpulpLouispion} alt="louispion listing products" />
+            <img src={jetpulpLouispion} alt="louispion listing products" loading="lazy" />
           </div>
           <div>
-            <img src={jetpulpCridon} alt="cridon lyon account" />
+            <img src={jetpulpCridon} alt="cridon lyon account" loading="lazy" />
           </div>
           <div>
-            <img src={jetpulpRobur} alt="robur map reseller search" />
+            <img src={jetpulpRobur} alt="robur map reseller search" loading="lazy" />
           </div>
         </Carousel>
       </Mockup>

@@ -7,6 +7,8 @@ import Mockup from "../components/Mockup";
 import Carousel from "../components/Carousel";
 import useIsBreakpoint from "../helpers/useIsBreakpoint";
 
+const isBrowser = () => typeof window !== "undefined"
+
 export default function ViacoExperience() {
   const isDesktop = useIsBreakpoint(1024);
 
@@ -55,27 +57,27 @@ export default function ViacoExperience() {
       <Mockup device={"macbook-pro"}>
         <Carousel>
           <div>
-            <img src={viacoRegister} alt="Register viaco" />
+            <img src={viacoRegister} alt="Register viaco" loading="lazy" />
           </div>
           <div>
-            <img src={viacoPrequalif} alt="Pre qualification" />
+            <img src={viacoPrequalif} alt="Pre qualification" loading="lazy" />
           </div>
           <div>
-            <img src={viacoFormMenu} alt="Menu formulaire" />
+            <img src={viacoFormMenu} alt="Menu formulaire" loading="lazy" />
           </div>
           <div>
-            <img src={viacoForm} alt="Formulaire multi step" />
+            <img src={viacoForm} alt="Formulaire multi step" loading="lazy" />
           </div>
         </Carousel>
       </Mockup>
     </div>
   );
 
+  const viacoExperience = isDesktop ? <>{description}{mockup}</> : <>{mockup}{description} </>;
+
   return (
     <section className="columns viaco experience is-desktop">
-      {!isDesktop && mockup}
-      {description}
-      {isDesktop && mockup}
+      {isBrowser() ? viacoExperience : null}
     </section>
   );
 }

@@ -41,13 +41,13 @@ export default function VocaleoExperience() {
       <Mockup device={"iphone-8"}>
         <Carousel>
           <div key={1}>
-            <img src={vocaleoHome} alt="Page d'accueil" />
+            <img src={vocaleoHome} alt="Page d'accueil" loading="lazy" />
           </div>
           <div key={2}>
-            <img src={vocaleoConfigurate} alt="Configurer une balise" />
+            <img src={vocaleoConfigurate} alt="Configurer une balise" loading="lazy" />
           </div>
           <div key={3}>
-            <img src={vocaleoCart} alt="Panier" />
+            <img src={vocaleoCart} alt="Panier" loading="lazy" />
           </div>
         </Carousel>
       </Mockup>

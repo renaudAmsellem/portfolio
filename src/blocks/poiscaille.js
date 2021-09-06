@@ -8,6 +8,8 @@ import Mockup from "../components/Mockup";
 import Carousel from "../components/Carousel";
 import useIsBreakpoint from "../helpers/useIsBreakpoint";
 
+const isBrowser = () => typeof window !== "undefined"
+
 export default function PoiscailleExperience() {
   const isMobile = useIsBreakpoint();
 
@@ -44,28 +46,28 @@ export default function PoiscailleExperience() {
       <Mockup device={"iphone-8"} className="is-left">
         <Carousel>
           <div>
-            <img src={poiscailleLogin} alt="Login" />
+            <img src={poiscailleLogin} alt="Login" loading="lazy" />
           </div>
           <div>
-            <img src={poiscailleListing} alt="Listing" />
+            <img src={poiscailleListing} alt="Listing" loading="lazy" />
           </div>
           <div>
-            <img src={poiscailleForm} alt="Form" />
+            <img src={poiscailleForm} alt="Form" loading="lazy" />
           </div>
           <div>
-            <img src={poiscailleMenu} alt="Menu" />
+            <img src={poiscailleMenu} alt="Menu" loading="lazy" />
           </div>
           <div>
-            <img src={poiscailleInvoice} alt="Invoice" />
+            <img src={poiscailleInvoice} alt="Invoice" loading="lazy" />
           </div>
         </Carousel>
       </Mockup>
     </div>
   );
 
+  const poiscailleExperience = isMobile ? <>{description}{mockup}</> : <>{mockup}{description} </>;
+
   return <section className="experience poiscaille columns">
-      {!isMobile && mockup}
-      {description}
-      {isMobile && mockup}
+    {isBrowser() ? poiscailleExperience : null}
   </section>;
 }

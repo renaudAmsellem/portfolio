@@ -61,10 +61,10 @@ export default function BedrockExperience() {
       <Mockup device={"macbook-pro"}>
         <Carousel>
           <div>
-            <img src={bedrock6Play} alt="Page d'accueil 6play" />
+            <img src={bedrock6Play} alt="Page d'accueil 6play" loading="lazy" />
           </div>
           <div>
-            <img src={bedrockSalto} alt="Site salto" />
+            <img src={bedrockSalto} alt="Site salto" loading="lazy" />
           </div>
         </Carousel>
       </Mockup>

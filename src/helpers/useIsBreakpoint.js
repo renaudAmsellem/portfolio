@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import debounce from 'lodash/debounce';
 
+const isBrowser = () => typeof window !== "undefined"
+
 function useIsBreakpoint(breakpoint = 768) {
-  const isBrowser = () => typeof window !== "undefined"
-  const initialValue = isBrowser() ? window.innerWidth : 1000;
+  const initialValue = isBrowser() ? window.innerWidth : 1200;
   const [width, setWidth] = useState(initialValue);
 
   useEffect(() => {

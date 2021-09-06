@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://renaudamsellem.com",
     title: "Portfolio Renaud Amsellem",
   },
   plugins: [
+    "gatsby-plugin-react-helmet",
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-sass",
     {
