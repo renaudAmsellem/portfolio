@@ -26,7 +26,7 @@ const RenaudPage = () => {
   return (
     <main className="content">
       <Helmet htmlAttributes={{ lang: 'en' }}>
-        <meta name="title" charSet="utf-8" content="Renaud Amsellem Portfolio" />
+        <title>Renaud Amsellem Portfolio</title>
         <meta name="description" charSet="utf-8" content="Here, you can find descriptions of my main works, informations about me and how to contact me" />
       </Helmet>
       <Navbar />
