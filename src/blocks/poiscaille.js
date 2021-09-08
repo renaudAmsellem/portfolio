@@ -17,7 +17,7 @@ export default function PoiscailleExperience() {
     <div className="description column is-two-thirds">
       <p className="title">Poiscaille ~ Fullstack developer ~ 7 work days</p>
       <p>
-        <i>Poiscaille is the sea version of the vegetable basket</i>
+        <i>Poiscaille is the sea version of the vegetable basket - sole developer</i>
       </p>
       <div>
         <span>

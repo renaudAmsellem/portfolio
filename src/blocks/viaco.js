@@ -17,7 +17,7 @@ export default function ViacoExperience() {
       <p className="title">Viaco ~ Frontend developer ~ 2019</p>
       <p>
         <i>
-          Viaco is a platform for qualified contacts between construction agents
+          Viaco is a platform for qualified contacts between construction agents - 2 developers & 1 PO
         </i>
       </p>
       <div>
@@ -63,10 +63,10 @@ export default function ViacoExperience() {
             <img src={viacoPrequalif} alt="Pre qualification" loading="lazy" />
           </div>
           <div>
-            <img src={viacoFormMenu} alt="Menu formulaire" loading="lazy" />
+            <img src={viacoFormMenu} alt="Form menu" loading="lazy" />
           </div>
           <div>
-            <img src={viacoForm} alt="Formulaire multi step" loading="lazy" />
+            <img src={viacoForm} alt="Multi step form" loading="lazy" />
           </div>
         </Carousel>
       </Mockup>

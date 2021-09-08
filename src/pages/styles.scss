@@ -9,6 +9,11 @@ body {
   font-weight: 300;
 }
 
+button {
+  border: 0;
+  background-color: transparent;
+}
+
 /* Override bulma */
 .columns {
   margin: 0;

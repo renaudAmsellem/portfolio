@@ -11,14 +11,13 @@ export default function BedrockExperience() {
       <p>
         <i>
           Bedrock delivers video streaming platform to media companies on all
-          devices
+          devices - 7 developers & 1 PO
         </i>
       </p>
       <div>
         <span>
           <strong>What I did</strong>
         </span>
-        <p>Team of 7 devs & 1 PO working semi-agile</p>
         <ul>
           <li>
             Development of the websites (
@@ -61,10 +60,10 @@ export default function BedrockExperience() {
       <Mockup device={"macbook-pro"}>
         <Carousel>
           <div>
-            <img src={bedrock6Play} alt="Page d'accueil 6play" loading="lazy" />
+            <img src={bedrock6Play} alt="Homepage 6play" loading="lazy" />
           </div>
           <div>
-            <img src={bedrockSalto} alt="Site salto" loading="lazy" />
+            <img src={bedrockSalto} alt="Salto website" loading="lazy" />
           </div>
         </Carousel>
       </Mockup>

@@ -11,7 +11,7 @@ export default function BedrockExperience() {
     <div className="description column">
       <p className="title">Jetpulp ~ Backend developer ~ 2016-2018</p>
       <p>
-        <i>Jetpulp is a digital agency working on marketing, dev and UX</i>
+        <i>Jetpulp is a digital agency working on marketing, dev and UX - 2/3 developers & 1 PO per project</i>
       </p>
       <div>
         <span>

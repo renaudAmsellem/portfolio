@@ -10,7 +10,7 @@ export default function VocaleoExperience() {
     <div className="description column is-two-thirds">
       <p className="title">Vocaléo ~ CTO ~ 40 work days</p>
       <p>
-        <i>Vocaléo helps blind people in their daily tasks with NFC tags</i>
+        <i>Vocaléo helps blind people in their daily tasks with NFC tags - sole developer</i>
       </p>
       <div>
         <span>
@@ -41,13 +41,13 @@ export default function VocaleoExperience() {
       <Mockup device={"iphone-8"}>
         <Carousel>
           <div key={1}>
-            <img src={vocaleoHome} alt="Page d'accueil" loading="lazy" />
+            <img src={vocaleoHome} alt="Homepage" loading="lazy" />
           </div>
           <div key={2}>
-            <img src={vocaleoConfigurate} alt="Configurer une balise" loading="lazy" />
+            <img src={vocaleoConfigurate} alt="Configure a tag" loading="lazy" />
           </div>
           <div key={3}>
-            <img src={vocaleoCart} alt="Panier" loading="lazy" />
+            <img src={vocaleoCart} alt="Cart" loading="lazy" />
           </div>
         </Carousel>
       </Mockup>

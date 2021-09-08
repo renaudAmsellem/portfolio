@@ -25,7 +25,8 @@ const RenaudPage = () => {
 
   return (
     <main className="content">
-      <Helmet>
+      <Helmet htmlAttributes={{ lang: 'en' }}>
+        <meta name="title" charSet="utf-8" content="Renaud Amsellem Portfolio" />
         <meta name="description" charSet="utf-8" content="Here, you can find descriptions of my main works, informations about me and how to contact me" />
       </Helmet>
       <Navbar />
@@ -122,14 +123,14 @@ const RenaudPage = () => {
         </div>
       </section>
       <section id="contact">
-        <h3 className="is-large">Let's work together!</h3>
+        <h2 className="is-large">Let's work together!</h2>
         <CopyToClipboard
           text={"amsellem.renaud@gmail.com"}
           onCopy={() => setCopied(true)}
         >
-          <a onClick={handleContactClick} className="contact-button">
+          <button onClick={handleContactClick} className="contact-button">
             {contactMessage}
-          </a>
+          </button>
         </CopyToClipboard>
         {copied && <p className="copied">copied!</p>}
       </section>
