@@ -26,11 +26,11 @@ export default function BedrockExperience() {
             </a>
             ,{" "}
             <a href="https://www.salto.fr" target="_blank" rel="noreferrer">
-              salto.fr
+              salto
             </a>
             ,{" "}
             <a href="https://v2.videoland.com" target="_blank" rel="noreferrer">
-              videoland.com
+              videoland
             </a>
             ...), theme blocks, gdpr
           </li>

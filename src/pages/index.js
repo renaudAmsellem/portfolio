@@ -90,7 +90,7 @@ const RenaudPage = () => {
           </p>
         </div>
         <div>
-          <p className="passion title is-3">Rubik's cube</p>
+          <p className="passion title is-3">Rubik's cube.</p>
           <p className="passion-text">
             I took the hobby a few years back and even though I keep telling
             myself that after a given goal, i'll stop. I never stopped.
@@ -100,7 +100,7 @@ const RenaudPage = () => {
           </p>
         </div>
         <div>
-          <p className="passion title is-3">Video games</p>
+          <p className="passion title is-3">Video games.</p>
           <p className="passion-text">
             I "fall into the pot" when I was a few years old thanks to my big
             brother. And it followed me to this day.
@@ -112,7 +112,7 @@ const RenaudPage = () => {
           </p>
         </div>
         <div>
-          <p className="passion title is-3">Guitar</p>
+          <p className="passion title is-3">Guitar.</p>
           <p className="passion-text">
             I'm playing the instrument for almost a decade now - on and off.
             <br />

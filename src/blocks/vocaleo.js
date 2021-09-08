@@ -10,7 +10,10 @@ export default function VocaleoExperience() {
     <div className="description column is-two-thirds">
       <p className="title">Vocaléo ~ CTO ~ 40 work days</p>
       <p>
-        <i>Vocaléo helps blind people in their daily tasks with NFC tags - sole developer</i>
+        <i>
+          Vocaléo helps blind people in their daily tasks with NFC tags - sole
+          developer
+        </i>
       </p>
       <div>
         <span>
@@ -18,8 +21,14 @@ export default function VocaleoExperience() {
         </span>
         <ul>
           <li>
-            Development of iOS and android applications as well as the
-            e-commerce
+            Development of iOS and android applications as well as the{" "}
+            <a
+              href="https://vocaleo-app.fr/boutique"
+              target="_blank"
+              rel="noreferrer"
+            >
+              e-commerce
+            </a>
           </li>
           <li>Accessibility oriented (screen readers, siri shortcut).</li>
           <li>
@@ -44,7 +53,11 @@ export default function VocaleoExperience() {
             <img src={vocaleoHome} alt="Homepage" loading="lazy" />
           </div>
           <div key={2}>
-            <img src={vocaleoConfigurate} alt="Configure a tag" loading="lazy" />
+            <img
+              src={vocaleoConfigurate}
+              alt="Configure a tag"
+              loading="lazy"
+            />
           </div>
           <div key={3}>
             <img src={vocaleoCart} alt="Cart" loading="lazy" />

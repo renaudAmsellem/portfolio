@@ -49,6 +49,10 @@
     .tools {
       margin-left: 2em;
     }
+
+    a {
+      font-weight: bold;
+    }
   }
 
   .vocaleo {
@@ -75,7 +79,6 @@
   .viaco {
     &,
     strong,
-    a,
     .title {
       color: white;
     }
@@ -85,7 +88,6 @@
   .jetpulp {
     &,
     strong,
-    a,
     .title {
       color: #2d2a26;
     }
@@ -127,6 +129,7 @@
       &:hover {
         background-color: white;
         color: #246e50;
+        cursor: pointer;
       }
     }
 
