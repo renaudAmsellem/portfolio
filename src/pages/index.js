@@ -15,24 +15,23 @@ import "./renaud.scss";
 const RenaudPage = () => {
   const [contactMessage, setContactMessage] = useState("Contact Me");
   const [copied, setCopied] = useState(false);
-  const [windowHeight, setWindowHeight] = useState(0);
-  const [pageHeight, setPageHeight] = useState(0);
+  const [presentationFullpageStyle, setPresentationFullpageStyle] = useState(
+    {}
+  );
+  const [textFullpageStyle, setTextFullpageStyle] = useState({});
 
   const handleContactClick = () => {
     setContactMessage("amsellem.renaud@gmail.com");
   };
 
   useEffect(() => {
-    if (copied) setTimeout(() => setCopied(false), 1000);
+    if (copied) setTimeout(() => setCopied(false), 2000);
   }, [copied]);
 
   useEffect(() => {
-    setWindowHeight(window.innerHeight);
+    setPresentationFullpageStyle({ height: window.innerHeight });
+    setTextFullpageStyle({ height: window.innerHeight - 52 });
   }, []);
-
-  useEffect(() => {
-    setPageHeight(windowHeight - 52);
-  }, [windowHeight]);
 
   return (
     <main className="content">
@@ -48,12 +47,9 @@ const RenaudPage = () => {
       <title>Renaud Amsellem</title>
       <section
         className="presentation-fullpage"
-        style={{ height: windowHeight }}
+        style={presentationFullpageStyle}
       >
-        <div
-          className="presentation-wrapper columns"
-          style={{ height: pageHeight }}
-        >
+        <div className="presentation-wrapper columns" style={textFullpageStyle}>
           <div className="presentation column is-5 is-offset-6">
             <h1 className="is-large">
               Hello I'm Renaud Amsellem, a full-stack web developer. <br />
