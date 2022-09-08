@@ -15,6 +15,8 @@ import "./renaud.scss";
 const RenaudPage = () => {
   const [contactMessage, setContactMessage] = useState("Contact Me");
   const [copied, setCopied] = useState(false);
+  const [windowHeight, setWindowHeight] = useState(0);
+  const [pageHeight, setPageHeight] = useState(0);
 
   const handleContactClick = () => {
     setContactMessage("amsellem.renaud@gmail.com");
@@ -24,10 +26,13 @@ const RenaudPage = () => {
     if (copied) setTimeout(() => setCopied(false), 1000);
   }, [copied]);
 
-  const isBrowser = () => typeof window !== "undefined";
+  useEffect(() => {
+    setWindowHeight(window.innerHeight);
+  }, []);
 
-  const { innerHeight: windowHeight } = isBrowser() ? window : {};
-  const pageHeight = windowHeight - 52;
+  useEffect(() => {
+    setPageHeight(windowHeight - 52);
+  }, [windowHeight]);
 
   return (
     <main className="content">
