@@ -3,8 +3,11 @@ import bedrock6Play from "../images/bedrock/6play.webp";
 import bedrockSalto from "../images/bedrock/salto.webp";
 import Mockup from "../components/Mockup";
 import Carousel from "../components/Carousel";
+import useIsBreakpoint from "../helpers/useIsBreakpoint";
 
 export default function BedrockExperience() {
+  const isMobile = useIsBreakpoint();
+
   const description = (
     <div className="description column is-half">
       <p className="title">Bedrock ~ Frontend developer ~ 2020-2021</p>
@@ -70,10 +73,21 @@ export default function BedrockExperience() {
     </div>
   );
 
-  return (
-    <section className="bedrock experience columns is-desktop">
+  const bedrockExperience = isMobile ? (
+    <>
       {description}
       {mockup}
+    </>
+  ) : (
+    <>
+      {mockup}
+      {description}
+    </>
+  );
+
+  return (
+    <section className="bedrock experience columns is-desktop">
+      {bedrockExperience}
     </section>
   );
 }

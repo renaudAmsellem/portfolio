@@ -8,7 +8,7 @@ import Mockup from "../components/Mockup";
 import Carousel from "../components/Carousel";
 import useIsBreakpoint from "../helpers/useIsBreakpoint";
 
-const isBrowser = () => typeof window !== "undefined"
+const isBrowser = () => typeof window !== "undefined";
 
 export default function PoiscailleExperience() {
   const isMobile = useIsBreakpoint();
@@ -17,7 +17,9 @@ export default function PoiscailleExperience() {
     <div className="description column is-two-thirds">
       <p className="title">Poiscaille ~ Fullstack developer ~ 7 work days</p>
       <p>
-        <i>Poiscaille is the sea version of the vegetable basket - sole developer</i>
+        <i>
+          Poiscaille is the sea version of the vegetable basket - sole developer
+        </i>
       </p>
       <div>
         <span>
@@ -65,9 +67,21 @@ export default function PoiscailleExperience() {
     </div>
   );
 
-  const poiscailleExperience = isMobile ? <>{description}{mockup}</> : <>{mockup}{description} </>;
+  const poiscailleExperience = isMobile ? (
+    <>
+      {description}
+      {mockup}
+    </>
+  ) : (
+    <>
+      {description}
+      {mockup}
+    </>
+  );
 
-  return <section className="experience poiscaille columns">
-    {isBrowser() ? poiscailleExperience : null}
-  </section>;
+  return (
+    <section className="experience poiscaille columns">
+      {isBrowser() ? poiscailleExperience : null}
+    </section>
+  );
 }

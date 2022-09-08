@@ -5,13 +5,19 @@ import jetpulpCridon from "../images/jetpulp/cridon.webp";
 import jetpulpRobur from "../images/jetpulp/robur.webp";
 import Mockup from "../components/Mockup";
 import Carousel from "../components/Carousel";
+import useIsBreakpoint from "../helpers/useIsBreakpoint";
 
 export default function BedrockExperience() {
+  const isMobile = useIsBreakpoint();
+
   const description = (
     <div className="description column">
       <p className="title">Jetpulp ~ Backend developer ~ 2016-2018</p>
       <p>
-        <i>Jetpulp is a digital agency working on marketing, dev and UX - 2/3 developers & 1 PO per project</i>
+        <i>
+          Jetpulp is a digital agency working on marketing, dev and UX - 2/3
+          developers & 1 PO per project
+        </i>
       </p>
       <div>
         <span>
@@ -74,26 +80,49 @@ export default function BedrockExperience() {
       <Mockup device={"macbook-pro"}>
         <Carousel>
           <div>
-            <img src={jetpulpLavieclaire} alt="Lavieclaire account" loading="lazy" />
+            <img
+              src={jetpulpLavieclaire}
+              alt="Lavieclaire account"
+              loading="lazy"
+            />
           </div>
           <div>
-            <img src={jetpulpLouispion} alt="louispion listing products" loading="lazy" />
+            <img
+              src={jetpulpLouispion}
+              alt="louispion listing products"
+              loading="lazy"
+            />
           </div>
           <div>
             <img src={jetpulpCridon} alt="cridon lyon account" loading="lazy" />
           </div>
           <div>
-            <img src={jetpulpRobur} alt="robur map reseller search" loading="lazy" />
+            <img
+              src={jetpulpRobur}
+              alt="robur map reseller search"
+              loading="lazy"
+            />
           </div>
         </Carousel>
       </Mockup>
     </div>
   );
 
-  return (
-    <section className="jetpulp experience columns is-desktop">
+  const jetpulpExperience = isMobile ? (
+    <>
       {description}
       {mockup}
+    </>
+  ) : (
+    <>
+      {mockup}
+      {description}
+    </>
+  );
+
+  return (
+    <section className="jetpulp experience columns is-desktop">
+      {jetpulpExperience}
     </section>
   );
 }

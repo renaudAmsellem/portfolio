@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import VocaleoExperience from "../blocks/vocaleo";
 import PoiscailleExperience from "../blocks/poiscaille";
+import InnsoExperience from "../blocks/innso";
 import BedrockExperience from "../blocks/bedrock";
 import ViacoExperience from "../blocks/viaco";
 import JetpulpExperience from "../blocks/jetpulp";
@@ -23,43 +24,59 @@ const RenaudPage = () => {
     if (copied) setTimeout(() => setCopied(false), 1000);
   }, [copied]);
 
+  const { innerHeight: windowHeight } = window;
+  const pageHeight = windowHeight - 52;
+
   return (
     <main className="content">
-      <Helmet htmlAttributes={{ lang: 'en' }}>
+      <Helmet htmlAttributes={{ lang: "en" }}>
         <title>Renaud Amsellem Portfolio</title>
-        <meta name="description" charSet="utf-8" content="Here, you can find descriptions of my main works, informations about me and how to contact me" />
+        <meta
+          name="description"
+          charSet="utf-8"
+          content="Here, you can find descriptions of my main works, informations about me and how to contact me"
+        />
       </Helmet>
       <Navbar />
       <title>Renaud Amsellem</title>
-      <div className="presentation-wrapper columns">
-        <div className="presentation column is-5 is-offset-6">
-          <h1 className="is-large">
-            Hello I'm Renaud Amsellem, a freelance full-stack web developer.
-          </h1>
-          <p>
-            I'm a passionnate web developer. <br />
-            My goal is to bring the most value to my clients with ideas and very
-            fonctional code.
-            <br />
-            Also a strong believer in agile methodology and KISS.
-          </p>
-          <p>I'm self-taught with an engineer background</p>
+      <section
+        className="presentation-fullpage"
+        style={{ height: windowHeight }}
+      >
+        <div
+          className="presentation-wrapper columns"
+          style={{ height: pageHeight }}
+        >
+          <div className="presentation column is-5 is-offset-6">
+            <h1 className="is-large">
+              Hello I'm Renaud Amsellem, a full-stack web developer. <br />
+            </h1>
+            <p>
+              I'm a passionnate web developer. <br />
+              My goal is to bring the most value to my clients with ideas and
+              very fonctional code.
+              <br />
+              Also a strong believer in agile methodology and KISS.
+            </p>
+            <p>I'm self-taught with an engineer background</p>
+          </div>
         </div>
-      </div>
+      </section>
       <section id="my-work">
         <div className="my-work">
           <p className="title is-3">MY WORK</p>
           <p>
             I've been working as a developer for 6 years. 3 years as a Back end
             developer in a web agency. And 3 years as a Frontend developer as a
-            consultant. <br />I also worked on a few projects as the sole
+            consultant. <br />I also worked on a few side projects as the sole
             developer
           </p>
         </div>
-        <VocaleoExperience />
-        <PoiscailleExperience />
+        <InnsoExperience />
         <BedrockExperience />
+        <PoiscailleExperience />
         <ViacoExperience />
+        <VocaleoExperience />
         <JetpulpExperience />
       </section>
       <section id="the-man-behind">
@@ -76,7 +93,7 @@ const RenaudPage = () => {
           <p className="passion-text">
             I think you could tell that with the picture of myself in the
             montains. I was in the pyrénées montains ; at the top of the little
-            vignemale.
+            Vignemale.
             <br />I also did most of the tour of the Ecrins massif, the
             beaufortain tour and half of the corsica famous GR20
           </p>
@@ -96,7 +113,7 @@ const RenaudPage = () => {
             myself that after a given goal, i'll stop. I never stopped.
             <br />
             Not to brag about it. But I can probably solve it faster than anyone
-            you know. My current best is 9.26 seconds.
+            you know. My current best is 8.25 seconds.
           </p>
         </div>
         <div>
