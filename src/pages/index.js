@@ -24,7 +24,9 @@ const RenaudPage = () => {
     if (copied) setTimeout(() => setCopied(false), 1000);
   }, [copied]);
 
-  const { innerHeight: windowHeight } = window;
+  const isBrowser = () => typeof window !== "undefined";
+
+  const { innerHeight: windowHeight } = isBrowser() ? window : {};
   const pageHeight = windowHeight - 52;
 
   return (
