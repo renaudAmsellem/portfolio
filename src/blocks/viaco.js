@@ -7,7 +7,7 @@ import Mockup from "../components/Mockup";
 import Carousel from "../components/Carousel";
 import useIsBreakpoint from "../helpers/useIsBreakpoint";
 
-const isBrowser = () => typeof window !== "undefined"
+const isBrowser = () => typeof window !== "undefined";
 
 export default function ViacoExperience() {
   const isDesktop = useIsBreakpoint(1024);
@@ -17,7 +17,8 @@ export default function ViacoExperience() {
       <p className="title">Viaco ~ Frontend developer ~ 2019</p>
       <p>
         <i>
-          Viaco is a platform for qualified contacts between construction agents - 2 developers & 1 PO
+          Viaco is a platform for qualified contacts between construction agents
+          - 2 developers & 1 PO
         </i>
       </p>
       <div>
@@ -73,7 +74,17 @@ export default function ViacoExperience() {
     </div>
   );
 
-  const viacoExperience = isDesktop ? <>{description}{mockup}</> : <>{mockup}{description} </>;
+  const viacoExperience = isDesktop ? (
+    <div>
+      {description}
+      {mockup}
+    </div>
+  ) : (
+    <div>
+      {mockup}
+      {description}
+    </div>
+  );
 
   return (
     <section className="columns viaco experience is-desktop">

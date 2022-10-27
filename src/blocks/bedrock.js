@@ -5,6 +5,8 @@ import Mockup from "../components/Mockup";
 import Carousel from "../components/Carousel";
 import useIsBreakpoint from "../helpers/useIsBreakpoint";
 
+const isBrowser = () => typeof window !== "undefined";
+
 export default function BedrockExperience() {
   const isMobile = useIsBreakpoint();
 
@@ -74,20 +76,20 @@ export default function BedrockExperience() {
   );
 
   const bedrockExperience = isMobile ? (
-    <>
+    <div>
       {description}
       {mockup}
-    </>
+    </div>
   ) : (
-    <>
+    <div>
       {mockup}
       {description}
-    </>
+    </div>
   );
 
   return (
     <section className="bedrock experience columns is-desktop">
-      {bedrockExperience}
+      {isBrowser() ? bedrockExperience : null}
     </section>
   );
 }

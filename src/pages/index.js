@@ -29,7 +29,7 @@ const RenaudPage = () => {
   }, [copied]);
 
   useEffect(() => {
-    setPresentationFullpageStyle({ height: window.innerHeight });
+    setPresentationFullpageStyle({ height: window.innerHeight - 52 });
     setTextFullpageStyle({ height: window.innerHeight - 52 });
   }, []);
 

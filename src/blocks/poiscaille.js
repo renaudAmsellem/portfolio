@@ -68,15 +68,15 @@ export default function PoiscailleExperience() {
   );
 
   const poiscailleExperience = isMobile ? (
-    <>
+    <div>
       {description}
       {mockup}
-    </>
+    </div>
   ) : (
-    <>
+    <div>
       {description}
       {mockup}
-    </>
+    </div>
   );
 
   return (

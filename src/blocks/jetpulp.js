@@ -7,6 +7,8 @@ import Mockup from "../components/Mockup";
 import Carousel from "../components/Carousel";
 import useIsBreakpoint from "../helpers/useIsBreakpoint";
 
+const isBrowser = () => typeof window !== "undefined";
+
 export default function BedrockExperience() {
   const isMobile = useIsBreakpoint();
 
@@ -19,7 +21,7 @@ export default function BedrockExperience() {
           developers & 1 PO per project
         </i>
       </p>
-      <div>
+      <div className="clasasjger">
         <span>
           <strong>What I did (among others)</strong>
         </span>
@@ -109,20 +111,20 @@ export default function BedrockExperience() {
   );
 
   const jetpulpExperience = isMobile ? (
-    <>
+    <div>
       {description}
       {mockup}
-    </>
+    </div>
   ) : (
-    <>
+    <div>
       {mockup}
       {description}
-    </>
+    </div>
   );
 
   return (
     <section className="jetpulp experience columns is-desktop">
-      {jetpulpExperience}
+      {isBrowser() ? jetpulpExperience : null}
     </section>
   );
 }
