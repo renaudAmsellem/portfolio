@@ -67,17 +67,9 @@ export default function PoiscailleExperience() {
     </div>
   );
 
-  const poiscailleExperience = isMobile ? (
-    <div>
-      {description}
-      {mockup}
-    </div>
-  ) : (
-    <div>
-      {description}
-      {mockup}
-    </div>
-  );
+  const poiscailleExperience = isMobile
+    ? [description, mockup]
+    : [mockup, description];
 
   return (
     <section className="experience poiscaille columns">

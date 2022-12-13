@@ -110,17 +110,9 @@ export default function BedrockExperience() {
     </div>
   );
 
-  const jetpulpExperience = isMobile ? (
-    <div>
-      {description}
-      {mockup}
-    </div>
-  ) : (
-    <div>
-      {mockup}
-      {description}
-    </div>
-  );
+  const jetpulpExperience = isMobile
+    ? [description, mockup]
+    : [mockup, description];
 
   return (
     <section className="jetpulp experience columns is-desktop">

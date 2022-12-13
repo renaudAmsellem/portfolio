@@ -75,17 +75,9 @@ export default function BedrockExperience() {
     </div>
   );
 
-  const bedrockExperience = isMobile ? (
-    <div>
-      {description}
-      {mockup}
-    </div>
-  ) : (
-    <div>
-      {mockup}
-      {description}
-    </div>
-  );
+  const bedrockExperience = isMobile
+    ? [description, mockup]
+    : [mockup, description];
 
   return (
     <section className="bedrock experience columns is-desktop">

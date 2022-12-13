@@ -74,17 +74,9 @@ export default function ViacoExperience() {
     </div>
   );
 
-  const viacoExperience = isDesktop ? (
-    <div>
-      {description}
-      {mockup}
-    </div>
-  ) : (
-    <div>
-      {mockup}
-      {description}
-    </div>
-  );
+  const viacoExperience = isDesktop
+    ? [description, mockup]
+    : [mockup, description];
 
   return (
     <section className="columns viaco experience is-desktop">
