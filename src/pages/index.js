@@ -116,7 +116,7 @@ const RenaudPage = () => {
             myself that after a given goal, i'll stop. I never stopped.
             <br />
             Not to brag about it. But I can probably solve it faster than anyone
-            you know. My current best is 8.25 seconds.
+            you know. My current best is 7.28 seconds.
           </p>
         </div>
         <div>
